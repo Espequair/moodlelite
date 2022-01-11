@@ -4,18 +4,18 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 
 public class Submission {
-    private String name;
-    private String gitPattern;
-    private LocalDateTime opening; 
-    private LocalDateTime closing;
-    private HashMap<Student, HashMap<String, Work>> workList;
+    public final String name;
+    public final String gitPattern;
+    public final LocalDateTime opening;
+    public final LocalDateTime closing;
+    public final HashMap<String, HashMap<String, Work>> workList;
 
-    public Submission (String name,
-            String gitPattern,
-            LocalDateTime opening,
-            LocalDateTime closing,
-            HashMap<Student, HashMap<String, Work>> workList) {
-
+    public Submission(String name,
+                      String gitPattern,
+                      LocalDateTime opening,
+                      LocalDateTime closing,
+                      HashMap<String, HashMap<String, Work>> workList) {
+        this.name = name;
         this.gitPattern = gitPattern;
         this.opening = opening;
         this.closing = closing;
