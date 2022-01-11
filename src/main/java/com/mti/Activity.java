@@ -5,14 +5,14 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 public class Activity {
-    private String name;
-    private String slug;
-    private LocalDateTime opening;
-    private LocalDateTime closing;
-    private String managerLogin;
-    private String gitPattern;
-    HashMap<String, Submission> submissionList;
-    HashSet<String> studentSet;
+    public final String name;
+    public final String slug;
+    public final LocalDateTime opening;
+    public final LocalDateTime closing;
+    public final String managerLogin;
+    public final String gitPattern;
+    public final HashMap<String, Submission> submissionList;
+    public final HashSet<String> studentSet;
 
     public Activity(
         String name,
@@ -22,7 +22,7 @@ public class Activity {
         String managerLogin, 
         String gitPattern,
         HashMap<String, Submission> submissionList,
-        HashSet<String> studentList
+        HashSet<String> studentSet
         )
         {
             this.name = name;
