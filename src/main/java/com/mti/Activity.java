@@ -12,7 +12,7 @@ public class Activity {
     public final String managerLogin;
     public final String gitPattern;
     public final HashMap<String, Submission> submissionList;
-    public final HashSet<String> studentSet;
+    public final HashSet<Student> studentSet;
 
     public Activity(
         String name,
@@ -22,7 +22,7 @@ public class Activity {
         String managerLogin, 
         String gitPattern,
         HashMap<String, Submission> submissionList,
-        HashSet<String> studentSet
+        HashSet<Student> studentSet
         )
         {
             this.name = name;

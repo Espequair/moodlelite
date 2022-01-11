@@ -8,13 +8,13 @@ public class Submission {
     private String gitPattern;
     private LocalDateTime opening; 
     private LocalDateTime closing;
-    private HashMap<String, HashMap<String, Work>> workList;
+    private HashMap<Student, HashMap<String, Work>> workList;
 
     public Submission (String name,
             String gitPattern,
             LocalDateTime opening,
             LocalDateTime closing,
-            HashMap<String, HashMap<String, Work>> workList) {
+            HashMap<Student, HashMap<String, Work>> workList) {
 
         this.gitPattern = gitPattern;
         this.opening = opening;
